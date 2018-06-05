@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg4"
+    tools:context="com.example.acer.appointme.MainActivity">
+
+    <Button
+        android:id="@+id/createBTN"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/buttonshape"
+        android:text="Create"
+        app:layout_constraintEnd_toStartOf="@+id/viewBTN"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarV" />
+
+    <CalendarView
+        android:id="@+id/calendarV"
+        android:layout_width="310dp"
+        android:layout_height="333dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="8dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchBTN" />
+
+    <Button
+        android:id="@+id/searchBTN"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginStart="262dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/buttonshape"
+        android:text="Search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/deleteBTN"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/buttonshape"
+        android:text="Delete"
+        app:layout_constraintEnd_toStartOf="@+id/moveBTN"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createBTN" />
+
+    <Button
+        android:id="@+id/viewBTN"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/buttonshape"
+        android:text="View/Edit"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/createBTN"
+        app:layout_constraintTop_toBottomOf="@+id/calendarV" />
+
+    <Button
+        android:id="@+id/moveBTN"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/buttonshape"
+        android:text="Move"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/deleteBTN"
+        app:layout_constraintTop_toBottomOf="@+id/viewBTN" />
+
+    <EditText
+        android:id="@+id/searchTXT"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="6dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColorLink="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/searchBTN"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
